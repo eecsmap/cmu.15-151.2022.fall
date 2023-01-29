@@ -1,0 +1,122 @@
+\documentclass[11pt,onecolumn,fleqn]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{enumerate}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{xcolor}
+
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\textwidth}{460pt}
+\setlength{\voffset}{-1cm}
+\setlength{\textheight}{21cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\newcommand{\TT}{$\checkmark$}
+\newcommand{\FF}{$\times$}
+
+%---------------------------------------------------------------------------
+% custom
+%
+\usepackage{mathtools}
+\DeclarePairedDelimiter\card{|}{|}
+
+\def\fall#1{\forall\, {#1}\;}
+\def\fex#1{\exists \,{#1}\;}
+\def\fexone#1{\exists_{1} \,{#1}\;}
+\def\fmlmat#1{\bigl(\,{#1}\,\bigr)}
+
+\def\set#1#2{\{\, {#1} \mid {#2}\,\}}
+
+
+%---------------------------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+{\Huge
+21-128 and 15-151 problem sheet 2
+}
+
+Solutions to the following seven exercises and optional bonus problem are to be submitted through 
+gradescope by 11PM on
+
+\textbf{Wednesday 14th September 2022.}
+
+\end{center}
+
+
+\subsubsection*{Problem 1}
+Determine which of the following assertions are true, where $A$, $B$ and $C$ are non-empty subsets of $\mathbb{Z}$.
+\begin{enumerate}[(a)]
+  \item $(A\cap B\cap C) \subset (A\cup B)$
+  \item $(A\setminus B) \cap (B\setminus A) = \varnothing $
+  \item $(A \cap B\neq \varnothing)\Longrightarrow ((A \setminus B)\subset A)$
+\end{enumerate}
+
+\subsubsection*{Problem 2}
+Prove that
+$$\{ x \in \mathbb{Z} : 5 \mid x \} = \{ x \in \mathbb{Z} : 5 \mid (10 - 4x) \}.$$
+
+\subsubsection*{Problem 3}
+Let $A, B \subseteq \mathbb{N}$ be finite and let 
+$C = \set{a \in A}{ \fex{b \in B} ( a + b \in A )}$.\\ For what sets $A$, $B$ does $A = C$?
+
+\subsubsection*{Problem 4}
+Let $X \triangle Y = (X \setminus Y) \cup (Y \setminus X)$. Prove $$(A \triangle B) \setminus (B \triangle C) \subseteq ((B \cap C) \setminus A) \cup (A \setminus (B \cup C)). $$\\
+
+\subsubsection*{Problem 5}
+Find a non-empty set $A$ such that 
+\begin{enumerate}
+\item[1.] $\fall{S \in A} ( S \subseteq \mathbb{N} )$
+\item[2.] $\fall{S \in A} \fex{S' \in A}\,\bigl(( S \neq S') \wedge (S \cup S') = S \bigr)$
+\end{enumerate}
+
+\subsubsection*{Problem 6}
+Let $\mathbb{N^{+}}$ denote the set of positive integers and consider
+the function $f : \mathbb{N^{+}} \times \mathbb{N^{+}} \to \mathbb{R}$ defined by
+$$f(a,b) = \frac{(a+1)(a+2b)}{2}$$
+\begin{enumerate}[(a)]
+\item Show that the image of $f$ is a subset of $\mathbb{N^{+}}$.
+\item Determine exactly which positive integers are elements of the image of $f$. 
+(\textbf{Hint:} Formulate a hypothesis by trying values.)
+\end{enumerate}
+
+\subsubsection*{Problem 7}
+For $a \in \mathbb{R}$ and $f : \mathbb{R} \to \mathbb{R}$, show that (a) and (b) below have different meanings.
+\begin{enumerate}[(a)]
+\item $\fall{ \varepsilon > 0} \fex{\delta > 0} \fall{x \in \mathbb{R}} 
+\bigl( \card{x-a} < \delta \Rightarrow \card{f(x) - f(a)} < \varepsilon \bigr)$.
+\item $\fex{\delta > 0} \fall{\varepsilon > 0} \fall{x \in \mathbb{R}} 
+\bigl( \card{x-a} < \delta \Rightarrow \card{f(x) - f(a)} < \varepsilon \bigr)$.
+\end{enumerate}
+(\textbf{Hint:} Find a function $f : \mathbb{R} \to \mathbb{R}$ and an element $a \in \mathbb{R}$ for which 
+(a) and (b) have different truth values.)
+
+\subsubsection*{Bonus Problem  (2 points)}
+A function $g : \mathbb{R} \to \mathbb{R}$ is \textit{even} if $g(-x) = g(x)$ for all $x \in \mathbb{R}$, 
+or \textit{odd} if $h(-x)=-h(x)$ for all $x \in \mathbb{R}$.
+
+Let $f : \mathbb{R} \to \mathbb{R}$.
+\begin{enumerate}[(a)] \vspace{-10pt}
+\item Prove that there exists a unique pair of functions $g,h : \mathbb{R} \to \mathbb{R}$ such that $g$ is even, 
+$h$ is odd, and $f=g+h$. (\textbf{Hint:} Express both $f(x)$ and $f(-x)$ in terms of $g(x)$ and $h(x)$, and solve 
+the resulting system of equations.)
+\item When $f$ is a polynomial function, express $g$ and $h$ as in (a) in terms of the coefficients of $f$.
+\end{enumerate}
+
+
+\end{document}
+

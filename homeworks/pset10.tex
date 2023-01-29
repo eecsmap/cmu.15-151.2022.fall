@@ -1,0 +1,107 @@
+\newpage\documentclass[11pt,onecolumn,fleqn]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{amsfonts, mathdots}
+\usepackage{mathrsfs}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{systeme}
+\usepackage{xstring}
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{ulem}
+\usepackage{courier}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\setlength{\oddsidemargin}{0px}
+\setlength{\textwidth}{460px}
+\setlength{\voffset}{-1.5cm}
+\setlength{\textheight}{20cm}
+\setlength{\parindent}{0px}
+\setlength{\parskip}{10pt}
+
+\newcommand{\TT}{$\checkmark$}
+\newcommand{\FF}{$\times$}
+\newcommand{\pr}{\mathbb{P}}
+
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+{\Huge 21-128 and 15-151 problem sheet 10}
+
+Solutions to the following six exercises and optional bonus problem are to be submitted through 
+gradescope by 11PM on
+
+\textbf{Thursday 8th December 2022.}
+
+\end{center}
+
+\subsubsection*{Problem 1}
+Prove that the set of all natural numbers, the set of all even natural numbers, and the set of all odd natural 
+numbers all have the same cardinality.
+
+\subsubsection*{Problem 2}
+A function $f : \mathbb{Z} \to \mathbb{Z}$ is \textit{periodic} if there exists a positive integer $k$ such that 
+$f(x+k)=f(x)$ for all $x \in \mathbb{Z}$. Prove that the set of all periodic functions $\mathbb{Z} \to \mathbb{Z}$ is countable.
+
+\subsection*{Problem 3}
+For each set, determine, with proof, whether it is countable or uncountable.
+\begin{enumerate}[(a)]
+    \item $F = \{f: \mathbb{N} \rightarrow \mathbb{N} \mid (\forall x > 0, x \in \mathbb{N}) (\exists y \in \mathbb{N}) (y < x \wedge f(x) = f(y))\}$
+    \item $G = \{g: \mathbb{N} \rightarrow \mathbb{N} \mid (\forall x > 1, x \in \mathbb{N}) (\exists y \in \mathbb{N}) (y < x \wedge g(x) = g(y))\}$
+\end{enumerate}
+
+\subsection*{Problem 4}
+Maxwell puts 2 grape and 2 strawberry Hi-Chew candies in a bag. Suppose Jennifer draws two candies out of the bag without replacement and then Brad draws the other two candies.  All the candies feel the same.  So when two candies are drawn from the bag, all possibilities have equal probability.
+\begin{enumerate}[(a)]
+\item Define a sample space $\Omega$ describing the possible outcomes of this experiment.
+\item Let $A$ and $B$ be the events that Jennifer gets a matching pair of candies and that Brad gets a matching pair of candies, respectively.  Determine the probabilities $\Pr(A)$ and $\Pr(B)$.
+\item Are the events $A$ and $B$ independent?
+\end{enumerate}
+\newpage
+
+\subsection*{Problem 5}
+Ryan, AJ, and Vianna go to the 151/128 store and will buy either a plushie or a bottle of Diet Coke. The three choices are mutually independent and each TA buys a plushie with probability $p$, with $0<p<1$. Let $M$ be the event that the majority of TAs buy plushies, and let $R$ be the event that Ryan buys a plushie.
+\begin{enumerate}[(a)]
+    \item Express $\pr(M)$ in terms of $p$.
+    \item Express $\pr(M\mid R)$ in terms of $p$.
+    \item Express $\pr(R\mid M)$ in terms of $p$. 
+\end{enumerate}
+
+\subsection*{Problem 6}
+The Michelles want to conduct a two-step experiment.  First, they flip a biased coin which shows heads with probability $0.7$ and tails with probability $0.3$.  If it shows heads, in the second step, they flip the same coin for $10$ more times; otherwise, i.e., if the coin in the first step shows tails, in the second step they flip a fair coin for $10$ times.  Let $A$ be the event that the coin in the first step shows heads, and let $B$ be the event that the coin flips in the second step show exactly $2$ heads.
+\begin{enumerate}[(a)]
+\item Find $\pr(B)$.
+\item Find $\pr(A\mid B)$, i.e., the probability that the first coin shows heads given that you see exactly $2$ heads in the second step.  Compare it with $\pr(A)$.
+\end{enumerate}
+
+\subsubsection*{Bonus}
+\begin{enumerate}[(a)]
+\item A subset $A$ of $\mathbb{R}$ has the property that, given $\varepsilon > 0$ and $x \in \mathbb{R}$, there exist 
+$a,b \in \mathbb{R}$ with $a \in A$ and $b \not \in A$, such that $|x-a|<\varepsilon$ and $|x-b|<\varepsilon$. Can $A$ 
+be countable? Can $A$ be uncountable?
+\item A subset $B$ of $\mathbb{R}$ has the property that, for every $b \in B$, there exists $\varepsilon > 0$
+such that for every $x \in \mathbb{R}$, $0<|b-x|<\varepsilon$ implies $x \not \in B$. Is $B$ always countable?
+\end{enumerate}
+
+[\textit{Source: Cambridge Mathematical Tripos Part IA 2010 Exam Paper 4 Question 8.}]
+
+\end{document}

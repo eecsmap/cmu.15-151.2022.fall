@@ -1,0 +1,120 @@
+Hi,
+
+Thanks for writing, I hope that you feel better!
+We don't record the lectures and recitations.
+
+You should contact your TAs for information on what you miss in 
+recitation:
+https://www.math.cmu.edu/~jmackey/151_128/recitations.html
+
+Please get notes from a classmate for the classes and recitations that you
+miss. Here is an approximate idea of what we will do on Wednesday and
+Friday:
+
+
+Wednesday:
+
+Students should read 2.1 for Friday and 2.2 for Monday
+PSET 1 is due on Wednesday at 11pm, PSET 2 is posted
+SI information: https://www.cmu.edu/student-success/programs/supp-inst.html
+Drop-In Tutoring is also now available:
+https://www.cmu.edu/student-success/programs/tutoring.html#drop-in
+
+
+Recall: Propositional and Logical Formulae
+Recall: Quantification matters, order and parenthesization matter, how to negate quantified statements.
+
+
+quantification example: (sqrt(x^2)) = x is meaningless by itself, we should talk about what it means 
+when x is quantified over positive reals, reals, and complex numbers.
+
+
+(usually omit) Students negate the definition of f is a continuous function from R to R.
+
+
+Discussion of why (there is y in B) (for every x in A) P(x,y)
+implies (for every x in A) (there is y in B) P(x,y) is true.
+(this is known as quantifier alternation)
+
+
+Let f:R -> R
+Consider the following statement: (There is M in R)(For every x in R)(|f(x)| <= M)
+What does this express? (f is bounded)
+
+
+What do you notice about (For every x in R)(There is M in R)(|f(x)| <= M)?
+Students come to the conclusion that it is always true, hence the first version
+implies the second version (as it should by quantifier alternation).
+
+
+Have students give an example of a an unbounded function f(x) and have
+them prove this by negating the definition of bounded.
+
+Note f(x) = x^2, people usually take x=M+1, which leads to M^2 + 2M + 1 > M,
+which is fine since (1/2)[(M+1)^2 + M^2 + 1] is positive.
+For f(x) = x, people *can* take x=M+1, but then we need to show |M+1| > M
+which is trivially true for M negative, and fine when M is positive.
+
+
+Students prove: for every n in Z,
+(4|n => there exist x,y in Z s.t. n = x^2 - y^2)
+
+
+Here is a link to squares puzzle just for fun:
+https://www.youtube.com/watch?v=m5evLoL0xwg
+
+
+Friday:
+
+Students should read 2.2 for next time.
+Please don't leave answers written on whiteboards, or in public spaces
+
+Sets Education!
+
+A set is a collection of distinct objects.
+The objects are called elements or members.
+
+x \in A, x \notin A, A \subseteq B, A \superseteq B, proper subset
+Perhaps mention the difference between "not a subset of" and "subsetneq"
+
+Discussion of "element of" vs "subset of"
+
+
+Recall: N, Q, Z, and R
+
+U is the universe of discourse
+
+[n] = the set of positive integers not exceeding n.
+
+The empty set. It is unique. You can join the empty set on facebook.
+Everything is true about the members of the empty set.
+
+Set Builder Notation:
+Ex - A = {2, 4, *}, B = {2k : k \in Z}, C = {n \in Z : \exists k \in Z n =2k+1}
+
+Power set of S, P(S). Calculation of P({a,b}) and P(P(\emptyset)).
+
+SxT and calculation of [2]x[3]
+
+students sketch [0,1]x[-1,2)
+
+A union B = {x \in U : x \in A or x\in B}
+A intersect B = {x \in U: x \in A and x \in B}
+A \setminus B = {x \in U: x \in A and x \notin B}
+A^c = U \setminus A
+A and B are disjoint if their intersection is empty
+
+
+Showing that sets A and B are equal:
+1) Show A \subseteq B and B \subseteq A
+2) Show (\forall x \in U)(x \in A if and only if x \in B)
+
+
+Students show that
+{(x,y): x,y \in Z and x^2 - y^2 = 1} = {(1,0), (-1,0)}
+
+
+If time remains, students can show (A-B)u(B-A) = (AuB)-(BnA)
+
+
+Best, JM

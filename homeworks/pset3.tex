@@ -1,0 +1,121 @@
+\newpage\documentclass[11pt,onecolumn,fleqn]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{enumerate}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{xcolor}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\textwidth}{460pt}
+\setlength{\voffset}{-1cm}
+\setlength{\textheight}{21cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\newcommand{\TT}{$\checkmark$}
+\newcommand{\FF}{$\times$}
+
+\def\fall#1{\forall\, {#1}\,}
+\def\fex#1{\exists \,{#1}\,}
+\def\fexone#1{\exists_{1} \,{#1}\,}
+\def\fmlmat#1{\bigl(\,{#1}\,\bigr)}
+
+\def\set#1#2{\{\, {#1} \mid {#2}\,\}}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+{\Huge
+21-128 and 15-151 problem sheet 3
+}
+
+Solutions to the following seven exercises and optional bonus problem are to be submitted through 
+gradescope by 11PM on
+
+\textbf{Wednesday 21st September 2022.}
+
+\end{center}
+
+
+\subsubsection*{Problem 1}
+Consider a function $f : A \to A$. Prove that if $f \circ f$ is injective, then $f$ is injective.
+
+
+\subsubsection*{Problem 2}
+Consider functions $f : A \to B$ and $g : B \to A$. Prove that
+\begin{enumerate}[(a)]
+\item If $f \circ g$ is the identity function on $B$, then $f$ is surjective.
+\item If $g \circ f$ is the identity function on $A$, then $f$ is injective.
+\end{enumerate}
+
+\textit{To remind you: given a set $X$, the identity function on $X$ is the function $\mathrm{id}_X : X \to X$ 
+defined by $\mathrm{id}_X(x)=x$ for all $x \in X$.}
+
+\subsubsection*{Problem 3}
+Let $a,b,c,d \in \mathbb{R}$ be constants with $a \ne 0$ and $c \ne 0$. Suppose that $f,g : \mathbb{R} \to \mathbb{R}$ with 
+$f(x)=ax+b$ and $g(x)=cx+d$ for all $x \in \mathbb{R}$. Prove that $f$ and $g$ are injective and surjective, but that the 
+function $h : \mathbb{R} \to \mathbb{R}$ defined by $h = g \circ f - f \circ g$ is neither injective nor surjective.
+
+\subsubsection*{Problem 4}
+Verify that the function $f : (0,1) \to \mathbb{R}$ defined by
+$$f(x) = \frac{2x-1}{2x(1-x)} \quad \text{for all } x \in (0,1)$$
+is a bijection.
+
+
+\newpage
+
+\subsubsection*{Problem 5}
+\begin{enumerate}[(a)]
+    \item Let $f: \mathbb{R} \times \mathbb{R} \rightarrow \mathbb{R}$, $g: \mathbb{R} \times \mathbb{R} \rightarrow \mathbb{R}$ where $f$ and $g$ are surjective and let $h: \mathbb{R} \times \mathbb{R} \rightarrow \mathbb{R}$ s.t. $\fall{(x, y)} \in \mathbb{R} \times \mathbb{R},\ h(x, y) = f(x, y) + g(x, y)$. Determine, with proof, whether or not $h$ is necessarily surjective.
+    \item For all positive integers $n$, define $S_n$ to be the set of bijections on $[n]$. Let
+    \begin{align*}
+      A &= \set{ f \in S_{n}}{ \fall{x \in [n]}( f(x) \neq x )} \\
+      B &=  \set{ f \in S_{n}}{ \fex{g \in S_{n}} \fall{x \in [n]}( f(g(x)) \neq g(x) )}
+    \end{align*}
+    Show that $A = B$.
+\end{enumerate}
+
+
+\subsubsection*{Problem 6}
+\begin{enumerate}[(a)]
+    \item Find a function $f:\mathbb{N}\rightarrow\mathbb{N}$ that is surjective and not injective, and show that it has at least two right-inverses.
+    \item Suppose that $f:A\rightarrow B$ is surjective but not injective. Prove that $f$ has at least two right-inverses.
+\end{enumerate}
+
+
+\subsubsection*{Problem 7}
+Let $g : \mathbb{R} \rightarrow \mathbb{R}$ and define $f : \mathcal{P}(\mathbb{R}) \rightarrow \mathcal{P}(\mathbb{R})$ via $f(S) = \{g(x) \mid x \in S\}$. 
+
+\begin{enumerate}
+\item[a)] Determine necessary and sufficient conditions on $g$ to have
+\begin{equation*}
+    \fall{A, B} \subseteq \mathbb{R} \, \  f(A \cap B) = f(A) \cap f(B)
+\end{equation*}
+
+\item[b)] Show that if $g$ is surjective, then $f$ is surjective. 
+\end{enumerate}
+
+
+\subsubsection*{Bonus Problem - 2 points}
+Let $f : A \to B$ be a function.
+\begin{enumerate}[(a)]
+\item Prove that there exists a set $X$ and functions $p : A \to X$ and $i : X \to B$, with $p$ surjective and $i$ injective, 
+such that $f = i \circ p$.
+\item Prove that there exists a set $Y$ and functions $j : A \to Y$ and $q : Y \to B$, with $j$ injective and $q$ surjective, 
+such that $f = q \circ j$.
+\end{enumerate}
+
+
+\end{document}

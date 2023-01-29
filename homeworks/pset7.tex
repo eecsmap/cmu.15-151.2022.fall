@@ -1,0 +1,91 @@
+\newpage\documentclass[11pt,onecolumn,fleqn]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{enumerate}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{xcolor}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\setlength{\oddsidemargin}{0px}
+\setlength{\textwidth}{460px}
+\setlength{\voffset}{-1.5cm}
+\setlength{\textheight}{20cm}
+\setlength{\parindent}{0px}
+\setlength{\parskip}{10pt}
+
+\newcommand{\TT}{$\checkmark$}
+\newcommand{\FF}{$\times$}
+
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+{\Huge 21-128 and 15-151 problem sheet 7}
+
+Solutions to the following seven exercises and optional bonus problem are to be submitted through 
+gradescope by 11PM on
+
+\textbf{Wednesday 9th November 2022.}
+
+\end{center}
+
+\subsubsection*{Problem 1}
+For $x,y,z \in \mathbb{Z}$, suppose that $5$ divides $x^2+y^2+z^2$. Prove that $5$ divides at least one of $x$, $y$ or $z$.
+
+\noindent
+Hint: What remainders can be left when the square of an integer is divided by 5?
+
+
+\subsubsection*{Problem 2}
+The base $10$ representation of an integer is \textit{palindromic} if the digits read the same when written forward or backward. 
+Prove that every palindromic integer with an even number of digits is divisible by $11$. 
+
+
+\subsubsection*{Problem 3} 
+Show your work in the following computations.
+\begin{enumerate}[(a)]
+    \item Determine the last two digits of $14^{2022}$.
+    \item Compute $\frac{53!}{27} \bmod 27$.
+    \item Find all integers $x$ such that $x^2 + 3x \equiv 3^{31} \mod 29$.
+\end{enumerate}
+
+
+\subsubsection*{Problem 4}
+Show that the equation $x^{2}+1\equiv0\pmod{p}$ has a solution when $p$ prime and $p\equiv1\pmod{4}$. 
+
+Hint: Wilson's Theorem.
+
+
+\subsubsection*{Problem 5}
+Let $m$ and $n$ be positive, relatively prime integers, and $r$ and $s$ be integers such that 
+$mr \equiv 1 \bmod n$ and $ns \equiv 1 \bmod m$. For integers $a,b$, find an integer value of 
+$x$ in terms of $a,b,m,n,r,s$ satisfying $x \equiv a \bmod n$ and $x \equiv b \bmod m$.
+
+
+\subsubsection*{Problem 6} 
+Let $A\subseteq\mathbb{N}^+$ and $B\subseteq\mathbb{N}^+$ be nonempty sets of positive integers.  
+Define $$A + B \stackrel{\text{def}}{=} \{a+b:a\in A,b\in B\}.$$ 
+Show that $A+B$ is finite if and only if both $A$ and $B$ are finite.
+
+\subsubsection*{Problem 7}
+For arbitrary $f : \mathbb{N} \rightarrow \mathbb{N}$ and $g : \mathbb{N} \rightarrow \mathbb{N}$, show that if the image of $g$ 
+is finite, then the image of $f \circ g$ is finite with size less than or equal to size of the image of $g$.
+
+
+\subsubsection*{Bonus Problem - 2 points}
+Find all positive integers $a$ for which there exist non-negative integers $x_0, x_1,\dots x_{2020}$ satisfying the equation
+$$a^{x_0} = a^{x_1} + a^{x_2} + \cdots + a^{x_{2020}}.$$
+
+
+\end{document}

@@ -1,0 +1,134 @@
+\documentclass[11pt,onecolumn,fleqn]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{enumerate}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{xcolor}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\textwidth}{460pt}
+\setlength{\voffset}{-1cm}
+\setlength{\textheight}{21cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\newcommand{\TT}{$\checkmark$}
+\newcommand{\FF}{$\times$}
+
+\def\fall#1{\forall\, {#1}\,}
+\def\fex#1{\exists \,{#1}\,}
+\def\fexone#1{\exists_{1} \,{#1}\,}
+\def\fmlmat#1{\bigl(\,{#1}\,\bigr)}
+
+
+\begin{document}
+\pagestyle{empty}
+\begin{center}
+{\Huge
+21-128 and 15-151 problem sheet 1
+}
+
+Solutions to the following seven exercises and optional bonus problem are to be submitted through 
+gradescope by 11PM on
+
+\textbf{Wednesday 7th September 2022.}
+
+\end{center}
+
+
+\subsubsection*{Problem 1}
+For each statement below, decide whether it is true or false. Prove your claim using only properties 
+of the natural numbers.
+\begin{enumerate}[(a)] \vspace{-10pt}
+\item If $n \in \mathbb{N}$ and $n^2+(n+1)^2 = (n+2)^2$, then $n=3$.
+\item For all $n \in \mathbb{N}$, it is false that $(n-1)^3 + n^3 = (n+1)^3$.
+\end{enumerate}
+
+
+\subsubsection*{Problem 2}
+\begin{enumerate}[(a)]
+    \item Show that $( p \Rightarrow q ) \vee ( p \Rightarrow r )$ and $p \Rightarrow ( q \vee r )$ are logically equivalent. 
+    \item Show that $(\fall{x} \in S \ P(x)) \vee (\fall{x} \in S \  Q(x))$ and $\fall{x} \in S \  ( P(x) \vee Q(x) )$\\ are not logically equivalent, where $P(x)$ and $Q(x)$ are logical formulae and $S$ is a set.
+\end{enumerate}
+
+
+\subsubsection*{Problem 3}
+Let $p(x,y)$ be the predicate `$x + y$ is even', where $x$ and $y$ range over the integers.
+\begin{enumerate}[(a)]
+\item Prove that $\fall{x} \fex{y}\, p(x,y)$ is true.
+\item Prove that $\fex{y}\fall{x}\,  p(x,y)$ is false.
+\end{enumerate}
+
+
+\subsubsection*{Problem 4}
+You have $m$ indistinguishable marbles, $m \in \mathbb{Z}^+$, and 5 indistinguishable bags.
+\begin{enumerate}[(a)]
+\item What is the smallest number of marbles such that you are guaranteed to have 5 marbles in the same bag or 5 different bags with at least one marble? Give proof.
+\item Suppose there are $n$ marbles and $k$ bags, where $n$ and $k$ are positive integers. Prove that there is a unique way to distribute the marbles such that the number of marbles in each bag differs by at most one.
+\end{enumerate}
+
+
+\subsubsection*{Problem 5}
+A Pythagorean triple is a triple of positive integers $(a,b,c)$ such that $a^2 + b^2 = c^2$. Let $(x,y,z)$ be a Pythagorean triple, and let $P=x+y+z$ and $A=\frac{1}{2}xy$ be the perimeter and area, 
+respectively, of the right-angled triangle whose side lengths are $x$, $y$ and $z$.
+\begin{enumerate}[(a)]
+\item Find the possible values of $(x,y,z)$ when $P=A$.
+\item Find the possible values of $(x,y,z)$ when $P=2A$.
+\end{enumerate}
+
+\subsubsection*{Problem 6}
+\begin{enumerate}[(a)]
+\item Show that the following statement is false:
+$$\text{For all } a,x \in \mathbb{R} \text{ there is a unique } y \in \mathbb{R} \text{ such that } x^4y+ay+x=0$$
+\item Find the set of real numbers $a$ such that the following statement is true:
+$$\text{For all } x \in \mathbb{R} \text{ there is a unique } y \in \mathbb{R} \text{ such that } x^4y+ay+x=0$$
+\end{enumerate}
+
+
+\subsubsection*{Problem 7}
+Which of the following numbers are irrational for every choice of numbers $r$, $a$ and $b$, such that
+$r$ is rational and $a$ and $b$ are irrational?
+$$a+r \qquad a+b \qquad ar \qquad ab \qquad a^r \qquad r^a \qquad a^b$$
+Prove your claims, either by proving that the number must always be irrational or by providing a counterexample. 
+If you claim that a number is irrational, then you should prove it.
+
+
+\subsubsection*{Bonus Problem (2 points)}
+Three brilliant, flawless logicians - Aimee, Brad, and Cindy were blindfolded and each had a hat with a 
+positive integer (possibly different for each) written on it placed on their heads.
+
+Their blindfolds were then removed; they faced each other in a circle and each could see the 
+hats the others were wearing, but not their own hat.
+
+They were told that two of the numbers added up to the third. In order to be generously rewarded 
+they needed to figure out what number was written on their hats.
+
+Here is the conversation that took place:
+
+Aimee: I don't know what my number is.
+\newline
+Brad: I don't know what my number is.
+\newline
+Cindy: I don't know what my number is.
+\newline
+Aimee: Now I know what my number is. It is 50.
+
+\begin{enumerate}[(a)]
+	\item What are the other numbers?
+	\item What combination(s) of numbers would allow Cindy to solve the problem in round 1?
+\end{enumerate}
+
+
+\end{document}

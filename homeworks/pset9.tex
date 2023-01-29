@@ -1,0 +1,108 @@
+\newpage\documentclass[11pt,onecolumn,fleqn]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{enumerate}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{xcolor}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\setlength{\oddsidemargin}{0px}
+\setlength{\textwidth}{460px}
+\setlength{\voffset}{-1.5cm}
+\setlength{\textheight}{20cm}
+\setlength{\parindent}{0px}
+\setlength{\parskip}{10pt}
+
+\newcommand{\TT}{$\checkmark$}
+\newcommand{\FF}{$\times$}
+
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+{\Huge 21-128 and 15-151 problem sheet 9}
+
+Solutions to the following seven exercises and optional bonus problem are to be submitted through 
+gradescope by 11PM on
+
+\textbf{Tuesday 22th November 2022.}
+
+\end{center}
+
+
+\subsubsection*{Problem 1}
+By counting in two ways, prove that $n^2 = 2\binom{n}{2}+n$ for all $n \ge 0$.
+
+
+\subsubsection*{Problem 2}
+By counting in two ways, prove that $${n \choose j}{n \choose k} = \sum_{i = 0}^{\min(j,k)}{n \choose i}{n-i \choose j-i}{n-j \choose k-i}$$ for all $n,j,k \in \mathbb{N},\ j,k \leq n$.
+
+
+\subsubsection*{Problem 3}
+By counting in two ways, prove that $\sum_{i=1}^n (i-1)(n-i) = \binom{n}{3}$ for all $n \ge 1$.
+
+
+\subsubsection*{Problem 4}
+Let $x,y,z$ be nonnegative real numbers such that $y+z \ge 2$. Prove that $$(x+y+z)^2 \ge 4x+4yz$$
+
+
+\subsubsection*{Problem 5} 
+Consider the following system of equations of real numbers:
+\begin{equation*}
+    \begin{cases}
+      3w + 2x + y + z = 14\\
+      w^2 + x^2 + y^2 + z^2 = 14
+    \end{cases}
+\end{equation*}
+What is the maximum possible value of $z$?
+
+
+\subsubsection*{Problem 6}
+The standard way to define ordered fields 
+is to start with a strict order on $\mathbb{F}$ and then axiomatize the properties that 
+make it compatible with arithmetic:
+%
+\begin{alignat*}{2}
+       &(O1)   \qquad &     x < y  &\implies  x + z < y + z  \\[1ex]
+       &(O2)   \qquad &     0 < x,y  &\implies  0 < x*y  
+\end{alignat*}
+%
+Alternatively, we can introduce  positive sets $P \subseteq \mathbb{F}$ and use
+them to define order:
+%
+\begin{alignat*}{2}
+       &(P1)   \qquad &     x, y \in P  &\implies  x + y \in P  \\[1ex]
+       &(P2)   \qquad &     x, y \in P  &\implies  x * y \in P  \\[1ex]
+       &(P3)   \qquad &     x \in P \lor \phantom{ }&x = 0 \lor -x \in P 
+\end{alignat*}
+%
+In $(P3)$, exactly one of the cases is supposed to hold. 
+Given $<$ we can define $P_{<} = \{ x \in \mathbb{F} \mid  0 < x\}$ and, conversely, 
+$x <_{P} y \Longleftrightarrow y-x \in P$.
+\vspace{2ex} 
+
+(a)  Show that $P_{<}$ is a positive set in any ordered field.
+
+(b)  Show that for any positive set $P$, the order $<_{P}$ produces an ordered field.
+
+
+
+
+\subsubsection*{Bonus}
+Show by counting in two ways that: 
+$$2^{(n^2)} = \sum_{i = 0}^n {n \choose i}(2^n - 1)^{i}$$
+
+
+
+\end{document}

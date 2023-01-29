@@ -1,0 +1,123 @@
+CHAPTER 0
+
+A proposition is a statement to which it is possible to assign a truth value.
+
+If a proposition is true, a proof of the proposition is a logically valid argument demonstrating that it is true.
+
+Natural numbers, integers, rational and irrational numbers, real numbers and complex numbers.
+
+Base b representation of natural numbers (very brief introduction in chapter 0, more details later).
+
+For integers a and b, we say that a divides b if and only if there is an integer c such that b = ac.
+
+Introduction to polynomials.
+
+
+CHAPTER 1
+
+A propositional variable is a symbol that represents a proposition. Propositional variables may be assigned truth values.
+
+Logical operators "and", "or", "if", "if and only if" and "not", and their conditions for truth.
+
+A propositional formula is an expression that is either a propositional variable, or is built up from propositional variables using logical operators.
+
+Two propositional formulae are logically equivalent if and only if their truth values are the same under any assignment of truth values to their constituent propositional variables.
+In order to prove that propositional formulae are logically equivalent, it suffices to show that they have identical columns in a truth table. 
+
+Some common equivalent propositional formulae:
+
+a and b is equivalent with b and a
+a or b is equivalent with b or a
+
+((a or b) or c) is equivalent with (a or (b or c))
+((a and b) and c) is equivalent with (a and (b and c))
+
+((a and b) or c) is equivalent with ((a or c) and (b or c))  <- distributivity
+((a or b) and c) is equivalent with ((a and c) or (b and c)) <- distributivity
+
+not (a or b) is equivalent with ((not a) and (not b)) <- DeMorgan's Laws
+not (a and b) is equivalent with ((not a) or (not b)) <- DeMorgan's Laws
+
+(a implies b) is equivalent with ((not b) implies (not a)) <- contrapositive
+
+not (a implies b) is equivalent with (a and (not b)) <- negating implication
+
+Note that the converse of (a implies b), namely (b implies a), is NOT equivalent with (a implies b).
+
+A tautology is a propositional formula which is true for every true assignment of its propositional variable.
+A contradiction is a propositional formula which is false for every true assignment of its propositional variable.
+
+
+Examples of elementary direct proofs of disjunctions and conjunctions.
+
+Examples of proof by contrapositive.
+
+Examples of proof of "there exists x in X p(x)" by displaying an element x in X such that p(x) is true.
+
+Examples of proof by contradiction. One assumes that the given statement is false and derives (a and (not a)) or 
+some other contradiction. If the statement is "a implies b", then one assumes "a and (not b)" and typically
+derives b, providing the contradiction (b and (not b)).
+
+
+A predicate is a symbol p together with a specified list of free variables x1,x2,...,xn (where n is a positive integer) and,
+for each free variable xi, a specification of a set Xi called the domain of discourse (or range) of xi. 
+
+The two main quantifiers used throughout mathematics are the universal quantifier "exists" and the existential quantifier "forall". 
+
+A logical formula is an expression that is built from predicates using logical operators and quantifiers; 
+it may have both free (unquantified) and bound (quantified) variables. 
+
+Logical formulae are negated by replacing "forall" with "exists", replacing "exists" with "forall", and negating the predicate.
+
+Another important quantifier is "exists unique".  "There exists a unique x in X  p(x)" is defined as
+"(there exists x in X  p(x)) and [for all x, y in X ((p(x) and p(y)) implies x=y)]"
+
+The negation of "There exists a unique x in X  p(x)" is thus
+"(for all x in X (not p(x))) or (there exist x, y in X [(x not equal to y) and (p(x) and p(y))]".
+
+
+CHAPTER 2
+
+A set is a collection of (distinct, unordered) elements from a specified universe of discourse. 
+The collection of everything in the universe of discourse is called the universal set, denoted by U.
+
+"element of", "subset of", "proper subset of", set builder notation, interval notation for real numbers.
+
+The empty set
+
+One shows that sets A and B are equal by either of following
+
+1) Show that A is a subset of B and then show that B is a subset of A.
+2) Show that for every x in U, x is in A if and only if x is in B.
+
+Intersection, Union, A \ B, Complement, Cartesian Product, Power Set
+
+
+CHAPTER 3
+
+A function f from a set X to a set Y is a specification of elements f(x) in Y for x in X, such that for all x in X, there is a unique y in Y, y = f(x).
+We call X the domain of f and we call Y the codomain of f.
+
+For a sqecification to "well define" a function f, it must satisfy totality (be computable for each x in X), existence (the computed objects must be always be in Y),
+and uniqueness (there computation must result in one and only one element of Y).
+
+If U is a subset of X, then f[U] = {y in Y: there is x in U such that f(x)=y}. This is called the image of U under f.
+
+If V is a subset of Y, then f^{-1}[V] = {x in X: f(x) is in V}. This is called the preimage of V under f.
+
+f is an injection if and only if for all x1, x2 in X, (f(x1)=f(x2) implies x1=x2).
+f is a surjection if and only if for all y in Y, there is x in X such that f(x)=y.
+f is a bijection if and only if f is a surjection and f is an injection.
+
+
+If f:X->Y and g:Y->Z, then we define "g composed with f" from X to Z by specifying that (g composed with f)(x) = g(f(x)) for every x in X.
+Function composition is associative, but not commutative.
+
+If f:X->Y and g:Y->X, then g is a left inverse of f and f is a right inverse of g if and only if g(f(x))=x for every x in X.
+
+Theorem: If X is not the emptyset and f:X->Y and g:Y->X, then
+
+1) f has a right inverse if and only if f is a surjection
+2) f has a left inverse if and only if f is an injection
+
+

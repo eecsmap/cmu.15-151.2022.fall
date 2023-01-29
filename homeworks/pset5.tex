@@ -1,0 +1,106 @@
+\documentclass[11pt,onecolumn,fleqn]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{enumerate}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{xcolor}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\setlength{\oddsidemargin}{0px}
+\setlength{\textwidth}{460px}
+\setlength{\voffset}{-1.5cm}
+\setlength{\textheight}{20cm}
+\setlength{\parindent}{0px}
+\setlength{\parskip}{10pt}
+
+\newcommand{\TT}{$\checkmark$}
+\newcommand{\FF}{$\times$}
+
+\def\nil{\mathsf{nil}}
+\def\prep{\mathsf{prep}}
+\def\rev{\mathsf{rev}}
+
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+{\Huge 21-128 and 15-151 problem sheet 5}
+
+Solutions to the following seven exercises and optional bonus problem are to be submitted through 
+Gradescope by 11PM on
+
+\textbf{Friday, 14th October 2022.}
+
+\end{center}
+
+\textbf{Background:}
+
+Recall that in class we defined the rectype list over some ground set $A$:
+\begin{itemize}
+\item  single atom $\nil$,
+\item  constructors $\prep[a,L]$, one for each $a \in A$.
+\end{itemize}
+
+The idea is that $\nil$ represents the empty list, and $\prep[a,L]$
+represents the list $L$ with element $a$ prepended. 
+We also defined append, join and reversal operations.
+Below we use the informal $::$ notation from class.
+
+For problems 1 and 2, you can use all the identities proven in the lecture slides, but annotate
+your argument clearly.
+If you need additional results (you will), establish them in separate arguments.
+The argument for commutativity of addition in Dedekind-Peano arithmetic is
+also a good source for inspiration.
+
+\subsubsection*{Problem 1}
+Prove $\rev(\rev(L)) = L$ by induction on lists.
+
+\subsection*{Problem 2}
+Prove $\rev(L::K) = \rev(K) :: \rev(L)$ by induction on lists.
+
+\subsubsection*{Problem 3}
+For each example below, determine whether the given relation $R$ is an equivalence relation on the given set $S$:
+\begin{enumerate}[(a)]
+\item $S = \mathbb{N} \setminus \{ 0, 1 \}$; $(x,y) \in R$ if and only if $\mathrm{gcd}(x,y) > 1$.
+\item $S = \mathbb{R}$; $(x,y) \in R$ if and only if there exists $n \in \mathbb{Z}$ such that $x=2^ny$.
+\end{enumerate}
+
+\subsubsection*{Problem 4}
+For every $n \in \mathbb{N}$ let $\sim_n$ be the relation on $\mathcal{P}([n])$ specified by $A \sim_n B$ if and only
+if $A \subseteq B$ or $B \subseteq A$. Determine, with proof, all $n \in \mathbb{N}$ such that $\sim_n$ is an equivalence relation.
+
+
+\subsubsection*{Problem 5}
+For each pair below, use the Euclidean algorithm to compute the greatest common divisor, and express the greatest 
+common divisor as an integer combination of the two numbers:
+\begin{enumerate}[(a)]
+\item $126$ and $224$;
+\item $221$ and $299$.
+\end{enumerate}
+
+\subsubsection*{Problem 6}
+Suppose that $\mathrm{gcd}(a,b)=1$. Prove that $\mathrm{gcd}(na,nb)=n$ without using the fact that
+integers $2$ and larger factor uniquely into primes.
+
+\subsubsection*{Problem 7}
+Fiona and Erica go to the 151/128 store after teaching recitation. The store is selling bottles of diet coke for 25 cents and hedgehog plushies for 10 cents. The TAs buy the same number of plushies and bottles of diet coke. What is the minimum number of items they have to buy such that the total cost is a nonzero whole number of dollars?
+
+
+\subsubsection*{Bonus Problem  (2 points)}
+Gabriel has two jars of jelly beans, one with $x$ beans and the other with $y$ beans. Each jar has a lever.
+When a jar has at least 2 beans, pressing its lever will give Gabriel one bean from it and move one bean from
+it to the other jar (if there are 1 or 0 beans in the jar, then pressing the lever has no effect). Determine
+necessary and sufficient conditions on $x$ and $y$, so that Gabriel can extract all but one of the jelly beans.
+
+\end{document}

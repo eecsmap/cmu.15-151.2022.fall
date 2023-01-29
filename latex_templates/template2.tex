@@ -1,0 +1,77 @@
+
+\documentclass[11pt]{article}
+%you can look for fun LaTeX packages to use here
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+
+%fun commands for fun sets
+%make sure to use these in math mode
+\newcommand{\Zset}{\mathbb{Z}}
+\newcommand{\Rset}{\mathbb{R}}
+\newcommand{\Nset}{\mathbb{N}}
+
+%it may be helpful to make more commands for words/symbols you use often that you don't have to keep typing 
+
+\oddsidemargin0cm
+\topmargin-2cm    
+\textwidth16.5cm   
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{[Name Here]}
+\newcommand{\myandrew}{[Andrew ID here]}
+\newcommand{\myhwnum}{homework-number-here}
+\newcommand{\mycourse}{[15-151/21-128] }
+\newcommand{\secnum}{[Section number]}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{HW\myhwnum}}}      % Note the different brackets!
+\rhead{\fancyplain{}{\myname\\ \myandrew}}
+\chead{\fancyplain{}{\mycourse}}
+
+\begin{document}
+
+\medskip                        
+
+\thispagestyle{plain}
+\begin{center}                  
+{\Large 151/128 HW \myhwnum} \\
+\myname \\
+\myandrew \\
+\mycourse Section \secnum
+\end{center}
+
+\question{Question 1}
+
+type your answer to question 1 here. \\\\\\
+
+
+
+be sure to put each question on a separate page, so that in Gradescope you can assign specific pages for each problem 
+
+\break
+
+\question{Question 2} 
+
+yay! now you can write the answer to question two here!
+
+
+Also look at the fancy page header! \\ \\
+
+Feel free to use this template for other courses (you'll need it in 15-150)
+
+
+
+
+\end{document}
+
+

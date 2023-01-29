@@ -1,0 +1,154 @@
+Hi,
+
+Thanks for writing, I hope that you feel better!
+
+You should contact your TAs for information on what you miss in 
+recitation:
+https://www.math.cmu.edu/~jmackey/151_128/recitations.html
+
+You should read chapter 0 and section 1.1 here:
+https://infinitedescent.xyz/dl/infdesc.pdf
+
+Please get notes from a classmate for the classes and recitations that you
+miss. Here is an approximate idea of what we will do on Monday through
+Friday:
+
+
+Monday:
+
+Welcome to CMU, Introduction of Course Staff, Logistical course details
+
+PSET 1 is posted on the hw site and on gradescope.
+
+
+Tell me what's in chapter 0:
+
+N -> base b expansion
+Z -> a|b and 
+     whenever b is not zero there is a unique q and 0 <= r < |b| s.t. a = bq + r 
+Q
+R
+C
+
+Polynomials and the Quadratic Formula
+
+
+
+Solve sqrt(x-3) = x-5
+Note that question should say "find all real numbers x such that..."
+Variables should be quantified. We need to see the "=>" symbols.
+
+
+State the Pythagorean Theorem
+
+Introduce Pythagorean Triples, have students give a few
+
+
+Interlude: |x|^2 = |x^2|
+
+Changing quantification is powerful. 
+Most will easily agree that for all real x, |x|^2 = |x^2|.
+Changing to quantify over C, we can ask if this is still true. 
+It is, but it is less obvious.
+We are really asking whether f(g(x))=g(f(x)) for two functions.
+
+Do the computation |(a+bi)^2| = |a+bi|^2 and then note how as a bonus we have a 
+pythagorean triple generating machine! It yields all *primitive* triples, but not
+all triples, for example (9,12,15).
+
+
+Berggren (1934) All primitive with b even can be gotten by starting with (3,4,5) and 
+applying
+
+1 -2 2   -1 2 2   1 2 2
+2 -1 2   -2 1 2   2 1 2
+2 -2 3   -2 2 3   2 2 3
+
+
+Get students to play the finger game and display expected winnings for odd player to
+get the 7/12 one-finger strategy.
+
+odd plays 1 p percent and even plays 1 q percent
+exp odd winnings = -4 + q (7-12p) + 7p
+
+
+Wednesday:
+
+No Canvas, see site for syllabus, HW, etc. HW submission will be through
+gradescope.
+
+https://www.overleaf.com/learn
+
+HW1 and LaTex source posted, due next Wednesday.
+
+Please read 1.2 and 1.3 for Friday.
+
+Recall that variables should be quantified, and implications put in
+explicitly.
+
+A propositional variable is a variable that assumes the values true and
+false.
+Logical connectives, not, and, or, if, iff and conditions for truth.
+
+Deduce that (-1)(-1)=1 from other (field) axioms. See page 532 of Clive.
+Perhaps leave as a problem to show that 0*x = 0 for all real numbers x.
+
+Prove that sqrt(2) is irrational, introducing proof by contradiction:
+p is logically equivalent with -p => (q and -q) or some other
+contradiction
+If we are proving p=>q by contradiction, then negating it yields p and -q
+to start and work toward a contradiction.
+
+Base b notation, algorithms to find it (right to left and left to right).
+Note that we will prove that these algorithms are correct later in the
+course.
+
+Friday:
+
+Please read 2.1.
+
+Recall propositional variables and connectives. Today we introduce
+quantifiers!
+
+A Propositional Formula is an expression that is either a propositional
+variable, or is "built up" from simpler propositional formulae using a
+logical operator.
+
+Predicate - symbol p with variables x1,...,xn coming from sets. Evaluates
+to True or False when xi are all known.
+
+Introduce "for every" and "there exists"
+
+Logical Formula - predicate with some (possibly all) of the variables
+bound by quantifiers. Free variable sets
+                    should be displayed for the reader.
+
+Logically equivalent and tautology with simple examples p or (not p), etc.
+
+Perhaps a note about the importance of parenthesization p => (q ^ p) vs
+(p=>q) ^ p.
+
+Demorgan's Laws, Contrapositive, not(p implies q)<=> p and (not q),
+(p<=>q) <=> (p=>q) and (q=>p), p or q <=> (not p) implies q.
+
+
+EX - (for every x in R) (there is y in R) [(y<x) and (|x-y|=1)]
+The above is true, and students prove it.
+
+EX - (there is y in R) (for every x in R) [(y<x) and (|x-y|=1)]
+The above is false, so existential and universal quantifiers don't
+commute.
+We need to negate and prove the above statement.
+
+
+Discuss negation of statements
+-[(for all x in A) P(x)]  is equivalent with (there is x in A) -P(x)
+and
+-[(there is x in A) P(x)] is equivalent with (for all x in A) -P(x).
+
+Students prove the negation of the earlier statement.
+
+Students prove: for every n in Z, (n prime => (n is odd) or (n=2))
+It's easist by contrapositive
+
+Best, JM

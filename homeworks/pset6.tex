@@ -1,0 +1,70 @@
+\newpage\documentclass[11pt,onecolumn,fleqn]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{enumerate}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{xcolor}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\setlength{\oddsidemargin}{0px}
+\setlength{\textwidth}{460px}
+\setlength{\voffset}{-1.5cm}
+\setlength{\textheight}{20cm}
+\setlength{\parindent}{0px}
+\setlength{\parskip}{10pt}
+
+\newcommand{\TT}{$\checkmark$}
+\newcommand{\FF}{$\times$}
+
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+{\Huge 21-128 and 15-151 problem sheet 6}
+
+Solutions to the following two exercises and optional bonus problem are to be submitted through 
+gradescope by 11PM on
+
+\textbf{Wednesday 26th October 2022.}
+
+\end{center}
+
+\subsubsection*{Problem 1}
+Rose, Emily, Susan, Micah, and Harrison are sailors on a tropical island. They spend the day gathering a pile of coconuts. Exhausted, they postpone dividing it until the next morning. Suspicious, each decides to take their share during the night. Rose divides the pile into 
+five equal portions plus one extra coconut, which she gives to a monkey. She takes one pile and leaves the rest in 
+a single pile. Emily later does the same; again the monkey receives one leftover coconut. Susan, Micah, and Harrison all do this; each time, a remainder of one goes to the monkey. In the morning, they split 
+the remaining coconuts into five equal piles, and each sailor gets their ``share''. (Each knows some were taken, but 
+none complains, since each is guilty!) What is the smallest number of coconuts in the original pile?
+
+\noindent
+Hint: The recursive calculations of the number of coconuts remaining are substantially simplified by assuming that 
+there are $n-4$ coconuts initially.
+
+\subsubsection*{Problem 2}
+Let $p$ be a prime number greater than 2. Prove that $\frac{2}{p}$
+can be expressed in exactly one way in the form $\frac1m + \frac1n$ where $m$ and $n$ are positive
+integers with $n > m$. 
+
+\noindent
+Hint: For proving uniqueness, try to get the equation in a form where you can case on whether $p \mid n$ or $p \mid m$.
+
+
+\subsubsection*{Bonus Problem - 2 points}
+A census taker interviews a woman in a house. ``Who lives here?'' he asks. ``My husband and I and my three daughters,'' she replies. ``What are the ages
+of your daughters?'' ``The product of their ages is 36 and the sum of their ages is the house number.'' The census taker looks at the house number, thinks,
+and says, ``You haven't given me enough information to determine the ages.'' ``Oh, you're right,'' she replies, ``Let me also say that my eldest daughter is asleep
+upstairs.'' ``Ah! Thank you very much!'' What are the ages of the daughters? (The problem requires ``reasonable'' mathematical interpretations of its words.)
+
+
+\end{document}
